@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+{% load comment_tags %}
+
+{% block title %}Obrigado!{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+  <div class="card mx-auto shadow-sm" style="max-width:600px;">
+    <div class="card-body text-center">
+      <h1 class="display-4">Obrigado!</h1>
+      <p class="lead">Suas respostas foram enviadas com sucesso.</p>
+      <hr>
+      <p>Você pode voltar para a página inicial ou sair.</p>
+      <a href="/" class="btn btn-primary">Página Inicial</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
