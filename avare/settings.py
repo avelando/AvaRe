@@ -8,6 +8,9 @@ env = environ.Env(
 )
 env.read_env(BASE_DIR / ".env")
 
+FORCE_SCRIPT_NAME = '/avare'
+USE_X_FORWARDED_HOST = True
+
 SECRET_KEY = env("SECRET_KEY")
 DEBUG = env("DEBUG")
 ALLOWED_HOSTS = env.list("ALLOWED_HOSTS")
